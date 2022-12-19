@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400&display=swap');
+
+body h4{
+    font-size: 1.11em;
+    line-height: 150%;
+    letter-spacing: normal;
+    text-transform: none;
+    color: #333333;
+    
+}
+body h2{
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    color: #ffffffff;
+    font-weight: 300;
+    font-size: 2.3em;
+    line-height: 110%;
+    letter-spacing: normal;
+    text-transform: none;
+}
+
+#carouselExampleFade{
+    height: 100vh;   
+    z-index: 100;
+  
+}
+
+img{
+    background-color: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+.heading{
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3.8em;
+    line-height: 100%;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+.subheading{
+    font-weight: 400;
+    color: rgb(255, 234, 0)!important;
+}
+.subtitle{
+    font-style: normal;
+    font-size: 1.11em;
+    line-height: 130%;
+    letter-spacing: 19px;
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+}
+
+/******************************Content******************************/
+.fa-briefcase, .fa-key, .fa-house-chimney, .fa-building{
+    color: #03a9f4;
+    font-size: 3.33em;
+}
+
+.icon-container{
+    background-color: #fcb700;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, .560784) 0 7px 20px -12px, rgba(0, 0, 0, .117647) 0 4px 25px 0, rgba(0, 0, 0, .2) 0 8px 10px -5px;
+    height: 100px;
+    /* margin: 0 auto 27px;
+    min-height: 0;
+    padding-bottom: 25px;
+    padding-top: 25px; */
+    transition: all 0.2s linear 0s;
+    width: 100px;
+}
+.icon-container:hover{
+    transform: scale(1.1);
+    
+}
+.fa-bed{
+    color: #FFFFFF;
+    font-size: 2.79em;
+}
+.description{
+    color: #666666;
+}
+.description2{
+    color: #FFFFFF;
+    font-weight: 200;
+}
+a{
+    color: #03a9f4;
+    text-decoration: none;
+    font-weight: 400;
+}
+a:hover{
+    color: #03a9f4;
+    text-decoration: underline;
+}
+
+.gridContainer{
+    background-color: #fff;
+    background-image: url("../img/bed-bedroom-clean-775219-1.jpg");
+    background-size: cover;
+    background-position: center top;
+    
+}
+
+
+
+/********Alvin********/
+.carousel{
+    height: 100vh;
+    width: 100%;
+}
+.carousel .carousel-inner {
+    height:100%;    
+}
