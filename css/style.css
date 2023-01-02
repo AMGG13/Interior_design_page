@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400&display=swap');
 
-body h4{
+body {
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+
+body h4 {
     font-size: 1.11em;
     line-height: 150%;
     letter-spacing: normal;
-    text-transform: none;
-    color: #333333;
-    
+    font-weight: 600;
 }
-body h2{
-    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+
+body h2 {
     color: #ffffffff;
     font-weight: 300;
     font-size: 2.3em;
@@ -18,18 +21,37 @@ body h2{
     text-transform: none;
 }
 
-#carouselExampleFade{
-    height: 100vh;   
-    z-index: 100;
-  
+body h5 {
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 2px;
 }
 
-img{
+body h6 {
+    font-size: .88em;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+#main-title{
+    font-style: 2.6em;
+    font-weight: 600;
+    line-height: 100%;
+}
+span{
+    font-weight: 300;
+}
+#carouselExampleFade {
+    height: 100vh;
+    z-index: 100;
+
+}
+
+img {
     background-color: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
-.heading{
-    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+.heading {
     font-weight: 600;
     font-style: normal;
     font-size: 3.8em;
@@ -37,11 +59,13 @@ img{
     letter-spacing: 2px;
     color: #FFFFFF;
 }
-.subheading{
+
+.subheading {
     font-weight: 400;
-    color: rgb(255, 234, 0)!important;
+    color: rgb(255, 234, 0) !important;
 }
-.subtitle{
+
+.subtitle {
     font-style: normal;
     font-size: 1.11em;
     line-height: 130%;
@@ -50,12 +74,15 @@ img{
 }
 
 /******************************Content******************************/
-.fa-briefcase, .fa-key, .fa-house-chimney, .fa-building{
+.fa-briefcase,
+.fa-key,
+.fa-house-chimney,
+.fa-building {
     color: #03a9f4;
-    font-size: 3.33em;
+    font-size: 50px;
 }
 
-.icon-container{
+.icon-container {
     background-color: #fcb700;
     border-radius: 100%;
     box-shadow: rgba(0, 0, 0, .560784) 0 7px 20px -12px, rgba(0, 0, 0, .117647) 0 4px 25px 0, rgba(0, 0, 0, .2) 0 8px 10px -5px;
@@ -66,54 +93,72 @@ img{
     transition: all 0.2s linear 0s;
     width: 100px;
 }
-.icon-container:hover{
+
+.icon-container:hover {
     transform: scale(1.1);
-    
+
 }
-.fa-bed{
+
+.fa-bed {
     color: #FFFFFF;
-    font-size: 2.79em;
+    font-size: 2.77em;
 }
-.fa-shower{
+
+.fa-shower {
     color: #FFFFFF;
-    font-size: 3.5em;
+    font-size: 2.77em;
 }
-.fa-snowflake{
+
+.fa-snowflake {
     color: #FFFFFF;
-    font-size: 3.25em;
+    font-size: 2.77em;
 }
-.description{
+
+.description {
     color: #666666;
 }
-.description2{
+
+.description2 {
     color: #FFFFFF;
     font-weight: 200;
 }
-a{
+
+a {
     color: #03a9f4;
     text-decoration: none;
     font-weight: 400;
 }
-a:hover{
+
+a:hover {
     color: #03a9f4;
     text-decoration: underline;
 }
 
-.gridContainer{
+.gridContainer {
     background-color: #fff;
-    background-image: url("../img/bed-bedroom-clean-775219-1.jpg");
+    background-image: url("../img/backgrounds/bed-bedroom-clean-775219-1.jpg");
     background-size: cover;
     background-position: center top;
-    
+
 }
 
+/******************************Testimonials******************************/
 
+.testimonials-container {
+    background-color: black;
+}
+
+.testimonial-img {
+    height: 150px;
+    width: 150px;
+}
 
 /********Alvin********/
-.carousel{
+.carousel {
     height: 100vh;
     width: 100%;
 }
+
 .carousel .carousel-inner {
-    height:100%;    
+    height: 100%;
 }
