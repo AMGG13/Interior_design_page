@@ -1,7 +1,19 @@
-.carousel{
-    height: 100vh;
-    width: 100%;
+:root{
+    --grey-form: rgb(150, 150, 150);
 }
-.carousel .carousel-inner {
-    height:100%;    
+.label-form{
+    text-transform: uppercase;
+    color: var(--grey-form);
+    font-size: 14px;
+}
+.p-form{
+    color: var(--grey-form);
+}
+.h-form{
+    color: var(--grey-form);
+}.input-form{
+    height: 50px;
+}
+.textfield-form{
+    height: 200px
 }

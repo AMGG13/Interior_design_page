@@ -30,6 +30,7 @@
 		<link rel="stylesheet" href="css.css" />
 	</head>
 	<body>
+
 		<!--### FORM ###-->
 		<div class="container-fluid">
 			<div class="row justify-content-center">
@@ -47,44 +48,28 @@
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-4 p-5 bg-light shadow p-3 mb-5 bg-body rounded text-center">
-					<div class="form-floating mb-4">
+					<label class="label-form">Your Name (required)</label>
 						<input
 							type="text"
-							class="form-control"
-							id="floatingInput"
-							placeholder="John"
+							class="form-control rounded-0 bg-light mt-2  mb-4 input-form"
 						/>
-						<label for="floatingInput">Your Name</label>
-					</div>
-					<div class="form-floating mb-4">
+					<label class="label-form">Your Email (required)</label>
 						<input
 							type="mail"
-							class="form-control"
-							id="floatingPassword"
-							placeholder="example@gmail.com"
+							class="form-control rounded-0 bg-light mt-2  mb-4 input-form"
 						/>
-						<label for="floatingPassword">Your Email</label>
-					</div>
-					<div class="form-floating mb-4">
+					<label class="label-form">Subject</label>
 						<input
 							type="text"
-							class="form-control"
-							id="floatingPassword"
-							placeholder="Password"
+							class="form-control rounded-0 bg-light mt-2  mb-4 input-form"
 						/>
-						<label for="floatingPassword">Subject</label>
-					</div>
-                    <label for="floatingTextarea2" class="m-3">Your message</label>
-					<div class="form-floating">
+                    <label class="label-form">Your message</label>
 						<textarea
-							class="form-control mb-4"
-							placeholder="Leave a comment here"
-							id="floatingTextarea2"
-							style="height: 200px"
+							class="form-control rounded-0 bg-light mt-2  mb-4 textfield-form"
 						></textarea>
-						
-					</div>
+						<button class="btn btn-info px-5 py-2 rounded-0 text-white" >SEND</button>
 				</div>
+				
 			</div>
 		</div>
 		<!--### FOOTER ###-->
