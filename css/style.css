@@ -41,6 +41,10 @@ body h6 {
 span{
     font-weight: 300;
 }
+
+.carousel > img{
+    height: 100vh;
+}
 #carouselExampleFade {
     height: 100vh;
     z-index: 100;
@@ -77,7 +81,7 @@ img {
 .fa-briefcase,
 .fa-key,
 .fa-house-chimney,
-.fa-building {
+.fa-building, .fa-star, .fa-bath, .fa-users {
     color: #03a9f4;
     font-size: 50px;
 }
