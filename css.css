@@ -10,10 +10,25 @@
     color: var(--grey-form);
 }
 .h-form{
+    font-size: 35px;
     color: var(--grey-form);
 }.input-form{
     height: 50px;
 }
 .textfield-form{
     height: 200px
+}
+.sponsors{
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+.sponsor-img{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: all 0.35s;
+    cursor: pointer;
+}
+.sponsor-img:hover{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
 }
