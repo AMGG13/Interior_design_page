@@ -2,6 +2,10 @@
     --grey-form: rgb(150, 150, 150);
     --blue-project: rgb(0, 174, 255);
 }
+body {
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
 
 /*### PROJECTS SECTION CLASSES ###*/
 .project-container{
@@ -13,16 +17,16 @@
     display: block;
     width: 100%;
     height: auto;
-    transition: .5s ease;
+    transition: 0.9s ease;
     backface-visibility: hidden;
 }
 .project-middle-content {
-    transition: .5s ease;
+    transition: 0.9s ease;
     opacity: 0;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
 }
@@ -32,6 +36,15 @@
   
 .project-container:hover .project-middle-content {
     opacity: 1;
+}
+
+.project-button-text{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 10px;
+    letter-spacing: 1px;
 }
 
 
@@ -63,7 +76,9 @@
     color: var(--grey-form);
 }
 .h-form{
-    font-size: 35px;
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    font-weight:lighter;
     color: var(--grey-form);
 }.input-form{
     height: 50px;
