@@ -2,6 +2,7 @@
     --grey-form: rgb(150, 150, 150);
     --blue-project: rgb(0, 174, 255);
 }
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 body {
     font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
     font-size: 18px;
@@ -47,6 +48,15 @@ body {
     letter-spacing: 1px;
 }
 
+@media (pointer:coarse) {
+    .project-image{
+        opacity: 0.3;
+    }
+    .project-middle-content{
+        opacity: 1;
+    }
+}
+
 
 /*### SPONSORS SECTION CLASSES ###*/
 .sponsors{
@@ -76,9 +86,9 @@ body {
     color: var(--grey-form);
 }
 .h-form{
-    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 40px;
-    font-weight:lighter;
+    font-weight:200;
     color: var(--grey-form);
 }.input-form{
     height: 50px;
