@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400&display=swap');
 
+:root{
+    --grey-form: rgb(150, 150, 150);
+    --blue-project: rgb(0, 174, 255);
+}
 body {
     font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
     font-size: 18px;
@@ -90,8 +94,9 @@ img {
     transform: translateY(-50%);   
 }
 .arrow-down{   
-    font-size: 50px !important;
+    font-size: 50px;
     color: #FFFFFF;
+    cursor: pointer;
 }
 .move-down {
     position: absolute;   
@@ -159,7 +164,7 @@ img {
 
 .description2 {
     color: #FFFFFF;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 a {
@@ -189,12 +194,89 @@ a:hover {
 
 
 
-/********Alvin********/
-.carousel {
-    height: 100vh;
+/*### PROJECTS SECTION CLASSES ###*/
+.project-container{
+    position: relative;
+    background-color: var(--blue-project);
+}
+.project-image {
+    opacity: 1;
+    display: block;
     width: 100%;
+    height: auto;
+    transition: 0.9s ease;
+    backface-visibility: hidden;
+}
+.project-middle-content {
+    transition: 0.9s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.project-container:hover .project-image {
+    opacity: 0.3;
+  }
+  
+.project-container:hover .project-middle-content {
+    opacity: 1;
 }
 
-.carousel .carousel-inner {
-    height: 100%;
+.project-button-text{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+@media (pointer:coarse) {
+    .project-image{
+        opacity: 0.3;
+    }
+    .project-middle-content{
+        opacity: 1;
+    }
+}
+
+
+/*### SPONSORS SECTION CLASSES ###*/
+.sponsors{
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+.sponsor-img{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    opacity: 0.5; /*Opacidad*/
+    
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.sponsor-img:hover{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/*### FORM SECTION CLASSES ###*/
+.label-form{
+    text-transform: uppercase;
+    color: var(--grey-form);
+    font-size: 14px;
+}
+.p-form{
+    color: var(--grey-form);
+}
+.h-form{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 40px;
+    font-weight:200;
+    color: var(--grey-form);
+}
+.textfield-form{
+    height: 200px;
 }
