@@ -2,12 +2,10 @@
     --grey-form: rgb(150, 150, 150);
     --blue-project: rgb(0, 174, 255);
 }
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 body {
     font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
     font-size: 18px;
 }
-
 /*### PROJECTS SECTION CLASSES ###*/
 .project-container{
     position: relative;
@@ -90,8 +88,6 @@ body {
     font-size: 40px;
     font-weight:200;
     color: var(--grey-form);
-}.input-form{
-    height: 50px;
 }
 .textfield-form{
     height: 200px;
