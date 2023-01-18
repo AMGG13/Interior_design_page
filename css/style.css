@@ -33,23 +33,12 @@ body h6 {
     letter-spacing: 2px;
 }
 
-#main-title{
-    font-style: 2.6em;
-    font-weight: 600;
-    line-height: 100%;
-}
+
 span{
     font-weight: 300;
 }
 
-.carousel > img{
-    height: 100vh;
-}
-#carouselExampleFade {
-    height: 100vh;
-    z-index: 100;
 
-}
 
 img {
     background-color: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
@@ -72,9 +61,55 @@ img {
 .subtitle {
     font-style: normal;
     font-size: 1.11em;
+    font-weight: 300;
     line-height: 130%;
     letter-spacing: 19px;
     font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+}
+/******************************Slider*******************************/
+.carousel-item {  
+    height:93vh;
+    background-size: cover;
+    background-position: center center;
+}
+.carousel-item.carousel-1{
+    background-image: url("../img/backgrounds/dan-gold-2202261.jpg");
+
+}
+.carousel-item.carousel-2{
+    background-image: url("../img/backgrounds/drew-coffman-690381.jpg");
+    
+}
+.carousel-item.carousel-3{
+    background-image: url("../img/backgrounds/joshua-ness-1092991.jpg");
+    
+}
+.carousel-caption{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);   
+}
+.arrow-down{   
+    font-size: 50px !important;
+    color: #FFFFFF;
+}
+.move-down {
+    position: absolute;   
+    top: 130%;
+    left: 0; 
+    right: 0; 
+    transform: translate(-50%, -50%);  
+    -webkit-animation: move 1s infinite  alternate;
+    animation: move 1s infinite  alternate;
+}
+
+@-webkit-keyframes move {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes move {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
 }
 
 /******************************Content******************************/
@@ -152,10 +187,7 @@ a:hover {
     background-color: black;
 }
 
-/* .testimonial-img {
-    height: 150px;
-    width: 150px;
-} */
+
 
 /********Alvin********/
 .carousel {
