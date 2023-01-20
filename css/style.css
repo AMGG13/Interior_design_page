@@ -2,6 +2,7 @@
 
 :root{
     --grey-form: #666666;
+    --grey-text:  rgb(68, 68, 68);;
     --blue-project: rgb(0, 174, 255);
 }
 body {
@@ -265,11 +266,11 @@ a:hover {
 /*### FORM SECTION CLASSES ###*/
 .label-form{
     text-transform: uppercase;
-    color: rgb(68, 68, 68);
+    color: var(--grey-text);
     font-size: 15px;
 }
 .p-form{
-    color: var(--grey-form);
+    color: var(--grey-text);
 }
 .h-form{
     font-family: 'Source Sans Pro', sans-serif;
