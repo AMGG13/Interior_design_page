@@ -265,8 +265,8 @@ a:hover {
 /*### FORM SECTION CLASSES ###*/
 .label-form{
     text-transform: uppercase;
-    color: var(--grey-form);
-    font-size: 14px;
+    color: rgb(68, 68, 68);
+    font-size: 15px;
 }
 .p-form{
     color: var(--grey-form);
