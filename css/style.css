@@ -226,11 +226,7 @@ a:hover {
     opacity: 1;
 }
 
-.project-button-text{
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 30px;
-    padding-right: 30px;
+.project-button{
     font-size: 12px;
     letter-spacing: 1px;
 }
