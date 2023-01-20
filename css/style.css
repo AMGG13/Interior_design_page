@@ -71,6 +71,22 @@ img {
     letter-spacing: 19px;
     font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
 }
+@media (min-width: 412px) {
+    .subtitle{      
+        letter-spacing: 10px;
+    }
+}
+@media (min-width: 360px) {
+    .subtitle{      
+        letter-spacing: 10px;
+    }
+}
+@media (min-width: 360px) {
+    .heading{
+       font-size: 3em;
+        
+    }
+}
 /******************************Slider*******************************/
 .carousel-item {  
     height:93vh;
