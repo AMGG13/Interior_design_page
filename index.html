@@ -433,32 +433,51 @@
 				</p>
 			</div>
 		</div>
-		<div class="row justify-content-center">
-			<div class="con-xl-4 col-lg-4 col-md-8 col-sm-10 col-10 p-5 bg-light shadow p-3 mb-5 bg-body rounded text-center">
-				<label class="fw-lighter label-form">Your Name (required)</label>
-					<input
-						type="text"
-						class="form-control rounded-0 bg-light mt-2  mb-4 input-form"
-					/>
-				<label class="fw-lighter label-form">Your Email (required)</label>
-					<input
-						type="mail"
-						class="form-control rounded-0 bg-light mt-2  mb-4 input-form"
-					/>
-				<label class="fw-lighter label-form ">Subject</label>
-					<input
-						type="text"
-						class="form-control rounded-0 bg-light mt-2  mb-4 input-form"
-					/>
-				<label class="label-form fw-lighter">Your message</label>
-					<textarea
-						class="form-control rounded-0 bg-light mt-2  mb-4 textfield-form"
-					></textarea>
-						<button class="btn btn-info px-5 py-2 rounded-0 text-white form-btn" >SEND</button>
-			</div>
+		<form class="row justify-content-center needs-validation" novalidate>
+			<div class="col-xl-4 col-lg-4 col-md-8 col-sm-10 col-10 p-5 bg-light shadow p-3 mb-5 bg-body rounded text-center">
+
+					<div class="col">
+						<label for="validationName" class="fw-lighter label-form">Your Name (required)</label>
+						<input
+							type="text"
+							class="form-control rounded-0 bg-light mt-2  mb-4 input-form"
+							id="validationName"
+							required
+						/>
+						<div class="invalid-feedback">
+							Your name is required
+						</div>
+					</div>
+					<div class="col">
+						<label for="validationEmail" class="fw-lighter label-form">Your Email (required)</label>
+						<input
+							type="mail"
+							class="form-control rounded-0 bg-light mt-2  mb-4 input-form"
+							id="validationEmail"
+							required
+						/>
+						<div class="invalid-feedback">
+							Your email is required
+						</div>
+					</div>
+
+					<div class="col">
+						<label for="" class="fw-lighter label-form ">Subject</label>
+						<input
+							type="text"
+							class="form-control rounded-0 bg-light mt-2  mb-4 input-form"
+						/>
+					</div>
+
+					<div class="col">
+						<label class="label-form fw-lighter">Your message</label>
+						<textarea
+							class="form-control rounded-0 bg-light mt-2  mb-4 textfield-form"
+						></textarea>
+					</div>
 			
-		</div>
-	</div>
+						<button class="btn btn-info px-5 py-2 rounded-0 text-white form-btn" type="submit" >SEND</button>
+			</div>
 
 	<!-- ##################### FOOTER ##################### -->
 	<div class="container-fluid">
@@ -576,6 +595,23 @@
 		  </div>
 		</div>
 	</div>
+
+	<script>
+		(() => {
+			'use strict'
+			const forms = document.querySelectorAll('.needs-validation')
+			Array.from(forms).forEach(form => {
+				form.addEventListener('submit', event => {
+					if (!form.checkValidity()) {
+						event.preventDefault()
+						event.stopPropagation()
+					}
+
+					form.classList.add('was-validated')
+				}, false)
+			})
+		})()
+	</script>
 </body>
 
 </html>
