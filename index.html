@@ -400,22 +400,22 @@
 		<div class="row d-flex flex-wrap align-items-center align-content-between m-0 sponsors">
 
 			<div class="col-lg-2 col-md-4 col-sm-6 col-6 my-3">
-				<img src="./img/logos/logo2.png" alt="" class="img-fluid sponsor-img">
+				<img src="./img/logos/logo2.png" data-bs-toggle="popover" data-bs-placement="top" title="Company name" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit." alt="" class="img-fluid sponsor-img">
 			</div>
 			<div class="col-lg-2 col-md-4 col-sm-6 col-6 my-3">
-				<img src="./img/logos/logo5.png" alt="" class="img-fluid sponsor-img">
+				<img src="./img/logos/logo5.png" data-bs-toggle="popover" data-bs-placement="top" title="Company name" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit." alt="" class="img-fluid sponsor-img">
 			</div>
 			<div class="col-lg-2 col-md-4 col-sm-6 col-6 my-3">
-				<img src="./img/logos/logo3.png" alt="" class="img-fluid sponsor-img">
+				<img src="./img/logos/logo3.png" data-bs-toggle="popover" data-bs-placement="top" title="Company name" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit." alt="" class="img-fluid sponsor-img">
 			</div>
 			<div class="col-lg-2 col-md-4 col-sm-6 col-6 my-3">
-				<img src="./img/logos/logo2.png" alt="" class="img-fluid  sponsor-img">
+				<img src="./img/logos/logo2.png" data-bs-toggle="popover" data-bs-placement="top" title="Company name" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit." alt="" class="img-fluid  sponsor-img">
 			</div>
 			<div class="col-lg-2 col-md-4 col-sm-6 col-12 d-none d-md-block my-3">
-				<img src="./img/logos/logo6.png" alt="" class="img-fluid sponsor-img">
+				<img src="./img/logos/logo6.png" data-bs-toggle="popover" data-bs-placement="top" title="Company name" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit." alt="" class="img-fluid sponsor-img">
 			</div>
 			<div class="col-lg-2 col-md-4 col-sm-6 col-12 d-none d-md-block my-3">
-				<img src="./img/logos/logo2.png" alt="" class="img-fluid  sponsor-img">
+				<img src="./img/logos/logo2.png" data-bs-toggle="popover" data-bs-placement="top" title="Company name" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit." alt="" class="img-fluid  sponsor-img">
 			</div>
 		</div>
 	</div>
@@ -573,6 +573,19 @@
 						}, false)
 					})
 				})()
+			</script>
+			<!--POPOVER SCRIPT-->
+			<script>
+			document.addEventListener("DOMContentLoaded", function(){
+					var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+					var popoverList = popoverTriggerList.map(function(element){
+							return new bootstrap.Popover(element);
+					});
+					var popTop = document.getElementById("popTop");
+					var popoverTop = new bootstrap.Popover(popTop, { 
+							placement : "top" 
+					});
+			});
 			</script>
 </body>
 
